@@ -4,12 +4,12 @@
 
 ## Claasical Ciphers
 
-- The Caesar Cipher [src/classical/caesar](src/classical/caesar)
-- The Vigenère Cipher [src/classical/vigenere](src/classical/vigenere)
+- The Caesar Cipher [classical/caesar](classical/caesar)
+- The Vigenère Cipher [classical/vigenere](classical/vigenere)
 
 ## Other
 
-- One-Time Pad [src/modern/otp](src/modern/otp)
+- One-Time Pad [modern/otp](modern/otp)
 
 
 ## Implementation in other languages:

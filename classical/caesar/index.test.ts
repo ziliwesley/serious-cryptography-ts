@@ -1,4 +1,4 @@
-import { encrypt, encryptClassic, decrypt, decryptClassic } from "..";
+import { encrypt, encryptClassic, decrypt, decryptClassic } from ".";
 
 describe("Test implementation of caesar cipher", () => {
     it('should handle lower case words', () => {

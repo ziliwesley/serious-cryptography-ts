@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "(TypeScript Version) Codes written while learning golang and reading the book \"Serious Cryptography by Jean-Philippe Aumasson\"",
     "scripts": {
+        "build": "tsc",
+        "clean": "rm -rf .out",
+        "start": "node .out/main.js",
         "test": "jest"
     },
     "devDependencies": {
@@ -11,7 +14,7 @@
         "ts-jest": "^23.10.3",
         "typescript": "^3.1.1"
     },
-    "main": "dist/main.js",
+    "main": ".out/main.js",
     "repository": "ziliwesley/serious-cryptography-ts",
     "author": "ziliwesley <ziliwesley@live.com>",
     "license": "MIT",
