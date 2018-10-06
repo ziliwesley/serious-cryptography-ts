@@ -1,0 +1,9 @@
+# Editor
+.vscode
+
+# Node.js Stuff
+node_modules
+yarn.lock
+
+# Compiled
+dist
