@@ -1,0 +1,36 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-config-prettier"
+    ],
+    "jsRules": {},
+    "rules": {
+        "prefer-for-of": true,
+        "typedef": [
+            true,
+            "call-signature",
+            "arrow-call-signature",
+            "parameter",
+            "arrow-parameter",
+            "property-declaration",
+            "member-variable-declaration",
+            "object-destructuring",
+            "array-destructuring"
+        ],
+        "interface-name": [
+            false
+        ],
+        "no-console": [
+            false
+        ]
+    },
+    "rulesDirectory": [],
+    "linterOptions": {
+        "exclude": [
+            "node_modules/**",
+            ".out/**",
+            ".coverage/**"
+        ]
+    }
+}

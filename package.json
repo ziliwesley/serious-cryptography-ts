@@ -6,13 +6,17 @@
         "build": "tsc",
         "clean": "rm -rf .out",
         "dev": "tsc -w",
+        "lint": "tslint -c tslint.json '**/*.{ts,tsx}'",
         "start": "node .out/main.js",
         "test": "jest"
     },
     "devDependencies": {
         "@types/jest": "^23.3.3",
         "jest": "^23.6.0",
+        "prettier": "^1.14.3",
         "ts-jest": "^23.10.3",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.15.0",
         "typescript": "^3.1.1"
     },
     "main": ".out/main.js",
@@ -20,6 +24,14 @@
     "author": "ziliwesley <ziliwesley@live.com>",
     "license": "MIT",
     "jest": {
-        "preset": "ts-jest"
+        "preset": "ts-jest",
+        "collectCoverage": true,
+        "collectCoverageFrom": [
+            "**/*.{ts,tsx}",
+            "!main.ts",
+            "!**/node_modules/**",
+            "!**/vendor/**"
+        ],
+        "coverageDirectory": ".coverage"
     }
 }

@@ -1,0 +1,13 @@
+# https://prettier.io/docs/en/options.html
+printWidth: 80
+
+# Use .editorconfig settings
+# tabWidth: 4
+# useTabs: fasle
+
+semi: true
+singleQuote: true
+trailingComma: none
+bracketSpacing: true
+jsxBracketSameLine: true
+arrowParens: avoid

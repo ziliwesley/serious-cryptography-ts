@@ -1,6 +1,6 @@
-import { encrypt, encryptClassic, decrypt, decryptClassic } from ".";
+import { decrypt, decryptClassic, encrypt, encryptClassic } from '.';
 
-describe("Test implementation of caesar cipher", () => {
+describe('Test implementation of caesar cipher', () => {
     it('should handle lower case words', () => {
         expect(encrypt('hello', 1)).toEqual('ifmmp');
         expect(decrypt('ifmmp', 1)).toEqual('hello');
@@ -12,16 +12,12 @@ describe("Test implementation of caesar cipher", () => {
     });
 
     it('should handle words with combined case', () => {
-        expect(encrypt('Hello World', 2))
-            .toEqual('Jgnnq Yqtnf');
-        expect(encrypt('Hello World', 2))
-            .toEqual('Jgnnq Yqtnf');
+        expect(encrypt('Hello World', 2)).toEqual('Jgnnq Yqtnf');
+        expect(encrypt('Hello World', 2)).toEqual('Jgnnq Yqtnf');
     });
 
     it('should remains other characters unchanged', () => {
-        expect(encryptClassic('Sky 天'))
-            .toEqual('Vnb 天');
-        expect(decryptClassic('Vnb 天'))
-            .toEqual('Sky 天');
+        expect(encryptClassic('Sky 天')).toEqual('Vnb 天');
+        expect(decryptClassic('Vnb 天')).toEqual('Sky 天');
     });
-})
+});

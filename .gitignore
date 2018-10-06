@@ -7,3 +7,6 @@ yarn.lock
 
 # Compiled
 .out
+
+# Test coverage reports
+.coverage

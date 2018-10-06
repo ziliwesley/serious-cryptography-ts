@@ -1,4 +1,4 @@
-import { shiftLetter, UpperCaseA } from "../../utils/letter-shifter";
+import { shiftLetter, UpperCaseA } from '../../utils/letter-shifter';
 
 interface VigenereShift {
     index: number;
@@ -10,15 +10,15 @@ export function* makeKeyIterator(
     start: number = 0,
     end: number = Infinity
 ): IterableIterator<VigenereShift> {
-    const keyUpperCase = key.toUpperCase()
-    const keyLen = key.length
+    const keyUpperCase = key.toUpperCase();
+    const keyLen = key.length;
 
     for (let index = start; index < end; index++) {
-        const modulus = index % keyLen
+        const modulus = index % keyLen;
         yield {
             index,
             shift: keyUpperCase.charCodeAt(modulus) - UpperCaseA
-        }
+        };
     }
 }
 
@@ -28,10 +28,10 @@ export function encrypt(text: string, key: string): string {
 
     for (const { index, shift } of keyIter) {
         const charCode = text.charCodeAt(index);
-        output.push(shiftLetter(charCode, shift))
+        output.push(shiftLetter(charCode, shift));
     }
 
-    return String.fromCharCode(...output)
+    return String.fromCharCode(...output);
 }
 
 export function decrypt(cipher: string, key: string): string {
@@ -40,8 +40,8 @@ export function decrypt(cipher: string, key: string): string {
 
     for (const { index, shift } of keyIter) {
         const charCode = cipher.charCodeAt(index);
-        output.push(shiftLetter(charCode, -shift))
+        output.push(shiftLetter(charCode, -shift));
     }
 
-    return String.fromCharCode(...output)
+    return String.fromCharCode(...output);
 }

@@ -1,6 +1,6 @@
-import { shiftLetter } from "../../utils/letter-shifter";
+import { shiftLetter } from '../../utils/letter-shifter';
 
-export function shiftString(input: string, shift: number) {
+export function shiftString(input: string, shift: number): string {
     const output = [];
 
     for (let index = 0; index < input.length; index++) {
@@ -11,18 +11,18 @@ export function shiftString(input: string, shift: number) {
     return String.fromCharCode(...output);
 }
 
-export function decrypt(cipher: string, shift: number) {
+export function decrypt(cipher: string, shift: number): string {
     return shiftString(cipher, -shift);
 }
 
-export function decryptClassic(text: string) {
+export function decryptClassic(text: string): string {
     return decrypt(text, 3);
 }
 
-export function encrypt(text: string, shift: number) {
+export function encrypt(text: string, shift: number): string {
     return shiftString(text, shift);
 }
 
-export function encryptClassic(text: string) {
+export function encryptClassic(text: string): string {
     return encrypt(text, 3);
 }

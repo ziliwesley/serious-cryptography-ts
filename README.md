@@ -11,7 +11,6 @@
 
 - One-Time Pad [modern/otp](modern/otp)
 
-
 ## Implementation in other languages:
 
 - [Golang](https://github.com/ziliwesley/serious-cryptography)
@@ -19,7 +18,7 @@
 ## Todos
 
 - [x] `Jest` Integrated
-- [ ] `TSLint` Integrated
+- [x] `TSLint` Integrated
 - [x] Implement `caesar`
 - [x] Implement `vigenere`
 - [ ] Implement `prng.lcg`
