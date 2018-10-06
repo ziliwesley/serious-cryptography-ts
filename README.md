@@ -12,6 +12,10 @@
 - One-Time Pad [src/modern/otp](src/modern/otp)
 
 
+## Implementation in other languages:
+
+- [Golang](https://github.com/ziliwesley/serious-cryptography)
+
 ## Todos
 
 - [x] `Jest` Integrated
