@@ -5,6 +5,7 @@
     "scripts": {
         "build": "tsc",
         "clean": "rm -rf .out",
+        "dev": "tsc -w",
         "start": "node .out/main.js",
         "test": "jest"
     },

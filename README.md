@@ -21,6 +21,6 @@
 - [x] `Jest` Integrated
 - [ ] `TSLint` Integrated
 - [x] Implement `caesar`
-- [ ] Implement `vigenere`
+- [x] Implement `vigenere`
 - [ ] Implement `prng.lcg`
 - [ ] Implement `otp`

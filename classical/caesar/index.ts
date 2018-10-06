@@ -4,8 +4,8 @@ export function shiftString(input: string, shift: number) {
     const output = [];
 
     for (let index = 0; index < input.length; index++) {
-        const keyCode = input.charCodeAt(index);
-        output.push(shiftLetter(keyCode, shift));
+        const charCode = input.charCodeAt(index);
+        output.push(shiftLetter(charCode, shift));
     }
 
     return String.fromCharCode(...output);
