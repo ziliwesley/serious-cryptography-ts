@@ -36,7 +36,8 @@ export default class RandomNumberGenerator {
     public randomBytes(length: number): Buffer {
         // NOTE: modulus has to be lower or equal to 2^32
         const randomUint32Needed = Math.ceil(length / 4);
-        const targetBuffer = new Buffer(randomUint32Needed * 4);
+        // Allocate without initialize it
+        const targetBuffer = Buffer.allocUnsafe(randomUint32Needed * 4);
 
         for (let index = 0; index < randomUint32Needed; index++) {
             const randomNumber = this.nextInt();

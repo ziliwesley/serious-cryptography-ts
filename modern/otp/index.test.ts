@@ -32,7 +32,7 @@ describe('Test One-time pad cipher', () => {
         );
 
         expect(() => {
-            encrypt('destiny', new Buffer(10));
+            encrypt('destiny', Buffer.alloc(10));
         }).toThrow(
             'encrypt(): Expect the length of key to be 7, got 10 instead'
         );
@@ -71,7 +71,7 @@ describe('Test One-time pad cipher', () => {
         );
 
         expect(() => {
-            decrypt('924a7326b408ea', new Buffer(15));
+            decrypt('924a7326b408ea', Buffer.alloc(15));
         }).toThrow(
             'decrypt(): Expect the length of key to be 7, got 15 instead'
         );
