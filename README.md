@@ -1,3 +1,6 @@
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Travis CI Build Status](https://img.shields.io/travis/ziliwesley/serious-cryptography-ts/master.svg?style=flat-square)](https://travis-ci.org/ziliwesley/serious-cryptography-ts)
+
 # About the book
 
 [Serious Cryptography - A Practical Introduction to Modern Encryption](https://nostarch.com/seriouscrypto) by Jean-Philippe Aumasson
