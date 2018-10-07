@@ -17,12 +17,3 @@
 ## Implementation in other languages:
 
 - [Golang](https://github.com/ziliwesley/serious-cryptography)
-
-## Todos
-
-- [x] `Jest` Integrated
-- [x] `TSLint` Integrated
-- [x] Implement `caesar`
-- [x] Implement `vigenere`
-- [x] Implement `prng.lcg`
-- [ ] Implement `otp`
