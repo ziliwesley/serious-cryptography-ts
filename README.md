@@ -21,5 +21,5 @@
 - [x] `TSLint` Integrated
 - [x] Implement `caesar`
 - [x] Implement `vigenere`
-- [ ] Implement `prng.lcg`
+- [x] Implement `prng.lcg`
 - [ ] Implement `otp`
