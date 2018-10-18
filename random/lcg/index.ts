@@ -1,4 +1,7 @@
-export default class RandomNumberGenerator {
+import { RandomNumberGenerator } from '../random.interface';
+
+export default class LinearCongruentialGenerator
+    implements RandomNumberGenerator {
     constructor(
         // multiplier
         private a: number = 1664525,
