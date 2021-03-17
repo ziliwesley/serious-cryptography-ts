@@ -2,12 +2,14 @@
 printWidth: 80
 
 # Use .editorconfig settings
-# tabWidth: 4
-# useTabs: false
+tabWidth: 2
+useTabs: false
 
 semi: true
 singleQuote: true
+quoteProps: as-needed
 trailingComma: none
 bracketSpacing: true
 jsxBracketSameLine: true
 arrowParens: avoid
+proseWrap: always

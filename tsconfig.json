@@ -1,24 +1,20 @@
 {
-    "compilerOptions": {
-        "sourceMap": true,
-        "strictFunctionTypes": true,
-        "noImplicitAny": true,
-        "noImplicitReturns": true,
-        "noImplicitThis": true,
-        "suppressImplicitAnyIndexErrors": true,
-        "module": "commonjs",
-        "target": "es6",
-        "types" : [
-            "node",
-            "jest"
-        ],
-        "baseUrl": ".",
-        "outDir": ".out"
-    },
-    "exclude": [
-        ".out",
-        "node_modules",
-        "**/*.spec.ts",
-        "**/*.test.ts",
-    ]
+  "compilerOptions": {
+    "sourceMap": true,
+    "strictFunctionTypes": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "module": "CommonJS",
+    "target": "ESNext",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2020"],
+    "types": ["node", "jest"],
+    "baseUrl": ".",
+    "sourceRoot": "src",
+    "outDir": ".out"
+  },
+  "exclude": [".out", "node_modules", "**/*.spec.ts", "**/*.test.ts"]
 }

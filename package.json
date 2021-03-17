@@ -1,38 +1,34 @@
 {
-    "name": "serious-cryptography-ts",
-    "version": "1.0.0",
-    "description": "(TypeScript Version) Codes written while learning golang and reading the book \"Serious Cryptography by Jean-Philippe Aumasson\"",
-    "scripts": {
-        "build": "tsc",
-        "clean": "rm -rf .out",
-        "dev": "tsc -w",
-        "lint": "tslint -c tslint.json '**/*.{ts,tsx}'",
-        "start": "node .out/main.js",
-        "test": "jest"
-    },
-    "devDependencies": {
-        "@types/jest": "^23.3.3",
-        "@types/node": "^10.11.4",
-        "jest": "^23.6.0",
-        "prettier": "^1.14.3",
-        "ts-jest": "^23.10.3",
-        "tslint": "^5.11.0",
-        "tslint-config-prettier": "^1.15.0",
-        "typescript": "^3.1.1"
-    },
-    "main": ".out/main.js",
-    "repository": "ziliwesley/serious-cryptography-ts",
-    "author": "ziliwesley <ziliwesley@live.com>",
-    "license": "MIT",
-    "jest": {
-        "preset": "ts-jest",
-        "collectCoverage": true,
-        "collectCoverageFrom": [
-            "**/*.{ts,tsx}",
-            "!main.ts",
-            "!**/node_modules/**",
-            "!**/vendor/**"
-        ],
-        "coverageDirectory": ".coverage"
-    }
+  "name": "serious-cryptography-ts",
+  "version": "1.0.0",
+  "description": "(TypeScript Version) Codes written while learning golang and reading the book \"Serious Cryptography by Jean-Philippe Aumasson\"",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf .out",
+    "dev": "tsc -w",
+    "lint": "tslint -c tslint.json '**/*.{ts,tsx}'",
+    "start": "node .out/main.js",
+    "watch": "tsc --watch",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.27",
+    "@typescript-eslint/eslint-plugin": "^4.15.0",
+    "@typescript-eslint/parser": "^4.15.0",
+    "eslint": "^7.19.0",
+    "eslint-config-prettier": "^7.2.0",
+    "jest": "^26.6.3",
+    "pino-pretty": "^4.5.0",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.3",
+    "typescript": "^4.1.5"
+  },
+  "main": ".out/main.js",
+  "repository": "ziliwesley/serious-cryptography-ts",
+  "author": "ziliwesley <ziliwesley@live.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
 }
