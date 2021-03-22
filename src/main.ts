@@ -1,4 +1,9 @@
-import { encrypt } from './classical/caesar';
+import { decrypt, encrypt } from './classical/caesar';
 
-console.log(encrypt('Caeser', 3));
-console.log(encrypt('Hello', 9));
+const cipher = encrypt('Caeser', 3);
+
+console.log(`Cipher is: ${cipher}`);
+
+const plainText = decrypt(cipher, 3);
+
+console.log(`Original Message was: ${plainText}`);

@@ -14,7 +14,7 @@
     "types": ["node", "jest"],
     "baseUrl": ".",
     "sourceRoot": "src",
-    "outDir": ".out"
+    "outDir": "dist"
   },
-  "exclude": [".out", "node_modules", "**/*.spec.ts", "**/*.test.ts"]
+  "exclude": ["dist", "node_modules", "**/*.spec.ts", "**/*.test.ts"]
 }
